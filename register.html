@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | TeamConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo">TeamConnect</a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="login.html">Login</a>
+                <a href="register.html" class="nav-button active">Register</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Registration Section -->
+    <section class="register-section">
+        <div class="container">
+
+            <div class="register-heading">
+                <p class="small-heading">JOIN TEAMCONNECT</p>
+
+                <h1>Create Your Account</h1>
+
+                <p>
+                    Register as a student or worker and start collaborating
+                    on suitable projects.
+                </p>
+            </div>
+
+
+            <div class="register-box">
+
+                <form>
+
+                    <h2>Registration Details</h2>
+
+                    <!-- User Type -->
+                    <div class="form-group">
+                        <label for="user-type">Register As</label>
+
+                        <select id="user-type" name="user-type" required>
+                            <option value="">Select account type</option>
+                            <option value="student">Student</option>
+                            <option value="worker">Worker</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Name -->
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                placeholder="Enter first name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                placeholder="Enter last name"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter phone number"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create password"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+
+                            <input
+                                type="password"
+                                id="confirm-password"
+                                name="confirm-password"
+                                placeholder="Confirm password"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- Terms -->
+                    <div class="terms">
+                        <input type="checkbox" id="terms" required>
+
+                        <label for="terms">
+                            I agree to the terms and conditions.
+                        </label>
+                    </div>
+
+
+                    <!-- Register Button -->
+                    <button type="submit" class="register-button">
+                        Create Account
+                    </button>
+
+
+                    <p class="login-text">
+                        Already have an account?
+                        <a href="login.html">Login here</a>
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div>
+                <h3>TeamConnect</h3>
+
+                <p>
+                    Project Team Formation & Collaboration System
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+
+        </div>
+
+        <div class="container copyright">
+            <p>© 2026 TeamConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

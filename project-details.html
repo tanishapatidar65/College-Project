@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - TeamConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Project Details Page */
+        .project-details-section {
+            background-color: #f7f9fc;
+            padding: 45px 20px 70px;
+        }
+
+        .project-details-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .project-header {
+            background-color: #ffffff;
+            padding: 30px;
+            border: 1px solid #dce3ed;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .project-header h1 {
+            color: #172b4d;
+            margin: 0 0 10px;
+            font-size: 32px;
+        }
+
+        .project-category {
+            color: #1d5fbf;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .project-status {
+            display: inline-block;
+            background-color: #e8f1ff;
+            color: #1d5fbf;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .project-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border: 1px solid #dce3ed;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .project-card h2 {
+            color: #172b4d;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 23px;
+        }
+
+        .project-card p {
+            color: #58708f;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .project-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-box {
+            background-color: #f7f9fc;
+            padding: 18px;
+            border-radius: 7px;
+            border: 1px solid #dce3ed;
+        }
+
+        .info-box strong {
+            display: block;
+            color: #172b4d;
+            margin-bottom: 6px;
+        }
+
+        .info-box span {
+            color: #58708f;
+        }
+
+        .creator-card {
+            background-color: #f7f9fc;
+            padding: 20px;
+            border: 1px solid #dce3ed;
+            border-radius: 7px;
+        }
+
+        .creator-card h3 {
+            color: #172b4d;
+            margin: 0 0 8px;
+        }
+
+        .creator-card p {
+            margin: 5px 0;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background-color: #e8f1ff;
+            color: #1d5fbf;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .project-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .project-actions a {
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .join-btn {
+            background-color: #1d5fbf;
+            color: #ffffff;
+        }
+
+        .join-btn:hover {
+            background-color: #1854a8;
+        }
+
+        .back-btn {
+            background-color: #ffffff;
+            color: #172b4d;
+            border: 1px solid #d4dce7;
+        }
+
+        .back-btn:hover {
+            border-color: #1d5fbf;
+            color: #1d5fbf;
+        }
+
+        @media (max-width: 768px) {
+            .project-info {
+                grid-template-columns: 1fr;
+            }
+
+            .project-actions {
+                flex-direction: column;
+            }
+
+            .project-actions a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">TeamConnect</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <span>|</span>
+
+            <a href="projects.html">Projects</a>
+            <span>|</span>
+
+            <a href="profile.html">Profile</a>
+            <span>|</span>
+
+            <a href="login.html">Login</a>
+            <span>|</span>
+
+            <a href="register.html">Register</a>
+        </div>
+    </nav>
+
+
+    <!-- Project Details -->
+    <section class="project-details-section">
+
+        <div class="project-details-container">
+
+            <!-- Project Header -->
+            <div class="project-header">
+
+                <h1>E-Commerce Website</h1>
+
+                <div class="project-category">
+                    Web Development
+                </div>
+
+                <span class="project-status">
+                    Open
+                </span>
+
+            </div>
+
+
+            <!-- About Project -->
+            <div class="project-card">
+
+                <h2>About the Project</h2>
+
+                <p>
+                    This project is about developing an e-commerce website
+                    where users can view products, search for products,
+                    add products to cart and place orders.
+                </p>
+
+            </div>
+
+
+            <!-- Project Information -->
+            <div class="project-card">
+
+                <h2>Project Information</h2>
+
+                <div class="project-info">
+
+                    <div class="info-box">
+                        <strong>Required Skills</strong>
+                        <span>HTML, CSS, JavaScript</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Team Members</strong>
+                        <span>3 Members</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Budget</strong>
+                        <span>₹5,000</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Deadline</strong>
+                        <span>30 Days</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Project Type</strong>
+                        <span>College Project</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Project Category</strong>
+                        <span>Web Development</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project Creator -->
+            <div class="project-card">
+
+                <h2>Project Creator</h2>
+
+                <div class="creator-card">
+
+                    <h3>Student Name</h3>
+
+                    <p>CSE Student</p>
+
+                    <p>Interested in Web Development</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Team Requirement -->
+            <div class="project-card">
+
+                <h2>Team Requirement</h2>
+
+                <p>
+                    The project creator is looking for team members who
+                    have basic knowledge of web development and are
+                    interested in working on an e-commerce website.
+                </p>
+
+            </div>
+
+
+            <!-- Required Skills -->
+            <div class="project-card">
+
+                <h2>Required Skills</h2>
+
+                <div class="skills">
+
+                    <span class="skill-tag">HTML</span>
+
+                    <span class="skill-tag">CSS</span>
+
+                    <span class="skill-tag">JavaScript</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="project-actions">
+
+                <a href="team-formation.html" class="join-btn">
+                    Request to Join
+                </a>
+
+                <a href="projects.html" class="back-btn">
+                    Back to Projects
+                </a>
+
+                <div class="next-page-button">
+    <a href="ratings-reviews.html">Ratings & Reviews →</a>
+</div>
+
+                <div class="next-page-button">
+    <a href="payment-management.html">Payment Management →</a>
+</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-info">
+
+                <h2>TeamConnect</h2>
+
+                <p>
+                    Project Team Formation & Collaboration System
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="projects.html">Projects</a>
+
+                <a href="profile.html">Profile</a>
+
+                <a href="login.html">Login</a>
+
+                <a href="register.html">Register</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
